@@ -4,4 +4,14 @@ set -e
 brew install \
 	jsoncpp \
 	nss
+
+JSONCPPDYLIB=/usr/local/opt/jsoncpp/lib/libjsoncpp.21.dylib
+if [ ! -f "$JSONCPPDYLIB" ]
+then
+    echo "$JSONCPPDYLIB does not exist"
+	echo "Look for the correct dylib name with 'ls /usr/local/opt/jsoncpp/lib/libjsoncpp.*.dylib'"
+	echo "Then modify the installer/macos/build-installer with the correct name"
+	exit
+fi
+
 sudo npm install -g appdmg

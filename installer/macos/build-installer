@@ -18,7 +18,7 @@ mkdir signtextjs_plus.app
 cd signtextjs_plus.app
 install "$TOPDIR"/src/macos/signtextjs_plus .
 install -m 644 \
-	/usr/local/opt/jsoncpp/lib/libjsoncpp.19.dylib \
+	/usr/local/opt/jsoncpp/lib/libjsoncpp.21.dylib \
 	/usr/local/opt/nspr/lib/libnspr4.dylib \
 	/usr/local/opt/nspr/lib/libplc4.dylib \
 	/usr/local/opt/nspr/lib/libplds4.dylib \
